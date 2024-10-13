@@ -2,10 +2,11 @@ import React from "react";
 import { useNavigate } from "react-router-dom"; // Use `useNavigate` instead of `useHistory`
 import { ChatEngine } from "react-chat-engine";
 import { auth } from "../firebase";
+import { useAuth } from "../contexts/AuthContext";
 
 const Chats = () => {
   const navigate = useNavigate(); // Replace useHistory with useNavigate
-
+  const { user } = useAuth();
   const handleLogout = async () => {
     await auth.signOut();
     navigate("/"); // Use navigate to redirect

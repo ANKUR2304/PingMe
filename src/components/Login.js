@@ -1,14 +1,13 @@
 import React from "react";
 import { GoogleOutlined, FacebookOutlined } from "@ant-design/icons";
 import {
-  signInWithRedirect,
+  signInWithPopup,
   GoogleAuthProvider,
   FacebookAuthProvider,
-} from "firebase/auth"; // Firebase v9 modular imports
-import { auth } from "../firebase"; // Your Firebase configuration file
+} from "firebase/auth";
+import { auth } from "../firebase";
 
 const Login = () => {
-  // Google and Facebook providers for authentication
   const googleProvider = new GoogleAuthProvider();
   const facebookProvider = new FacebookAuthProvider();
 
@@ -19,7 +18,7 @@ const Login = () => {
         {/* Google Sign In */}
         <div
           className="login-button google"
-          onClick={() => signInWithRedirect(auth, googleProvider)}
+          onClick={() => signInWithPopup(auth, googleProvider)}
         >
           <GoogleOutlined /> Sign In with Google
         </div>
@@ -28,7 +27,7 @@ const Login = () => {
         {/* Facebook Sign In */}
         <div
           className="login-button facebook"
-          onClick={() => signInWithRedirect(auth, facebookProvider)}
+          onClick={() => signInWithPopup(auth, facebookProvider)}
         >
           <FacebookOutlined /> Sign In with Facebook
         </div>

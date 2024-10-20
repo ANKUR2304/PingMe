@@ -25,10 +25,9 @@
 To set up the project locally, follow these steps:
 
 1. Clone the repository:
-
-  ```bash
-   git clone https://github.com/your-username/PingMe.git
-  ```
+    ```bash
+     git clone https://github.com/your-username/PingMe.git
+    ```
 
 2. Navigate to the project directory:
    ```bash
@@ -42,15 +41,15 @@ To set up the project locally, follow these steps:
 
 4. Set up environment variables:
    - Create a .env file in the root directory and add your ChatEngine and Firebase credentials.
-  ```
-  REACT_APP_CHAT_ENGINE_ID=your-chat-engine-id
-  REACT_APP_CHAT_ENGINE_KEY=your-chat-engine-private-key
-  ```
+    ```
+    REACT_APP_CHAT_ENGINE_ID=your-chat-engine-id
+    REACT_APP_CHAT_ENGINE_KEY=your-chat-engine-private-key
+    ```
 
 5. Start the development server:
-```bash
-npm start
-```
+  ```bash
+  npm start
+  ```
 
 6. Visit http://localhost:3000 in your browser to use PingMe.
 

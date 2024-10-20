@@ -47,9 +47,9 @@ To set up the project locally, follow these steps:
     ```
 
 5. Start the development server:
-  ```bash
-  npm start
-  ```
+    ```bash
+      npm start
+    ```
 
 6. Visit http://localhost:3000 in your browser to use PingMe.
 
